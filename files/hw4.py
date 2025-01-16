@@ -94,6 +94,5 @@ def main():
     write_result('result.json', result)
     print("Результат успешно записан в result.json.")
 
-
 if __name__ == "__main__":
     main()
