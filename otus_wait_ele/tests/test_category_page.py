@@ -11,3 +11,4 @@ def test_category_page_elements(browser):
     wait.until(EC.visibility_of_element_located((By.NAME, "search")))
     wait.until(EC.visibility_of_element_located((By.ID, "cart")))
     wait.until(EC.visibility_of_element_located((By.CLASS_NAME, "breadcrumb")))
+

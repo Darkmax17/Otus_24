@@ -36,3 +36,4 @@ def test_main_page_elements(browser):
             wait.until(EC.visibility_of_element_located((By.CSS_SELECTOR, "#cart button")))
         except TimeoutException:
             print("❌ Cart button not found")
+
