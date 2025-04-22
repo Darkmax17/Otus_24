@@ -11,4 +11,3 @@ def test_register_page_elements(browser):
     wait.until(EC.visibility_of_element_located((By.ID, "input-email")))
     wait.until(EC.visibility_of_element_located((By.ID, "input-password")))
     wait.until(EC.visibility_of_element_located((By.NAME, "agree")))
-

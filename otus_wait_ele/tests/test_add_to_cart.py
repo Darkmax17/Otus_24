@@ -34,4 +34,3 @@ def test_add_random_product_to_cart(browser):
     cart_table = wait.until(EC.visibility_of_element_located(
         (By.CSS_SELECTOR, ".table-responsive")))
     assert product_name in cart_table.text, f"Товар {product_name} не найден в корзине"
-

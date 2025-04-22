@@ -14,4 +14,3 @@ def test_currency_switch_category_page(browser):
     price_after = wait.until(EC.visibility_of_element_located((By.CSS_SELECTOR, ".price"))).text
 
     assert price_before != price_after, "Цена в категории не изменилась при смене валюты"
-

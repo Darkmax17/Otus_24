@@ -29,4 +29,3 @@ def browser(request):
     driver.base_url = base_url
     yield driver
     driver.quit()
-
