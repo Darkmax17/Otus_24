@@ -1,3 +1,4 @@
+import allure
 from selenium.webdriver.common.by import By
 
 class ProductPage:
@@ -10,4 +11,7 @@ class ProductPage:
         self.driver.get(product_url)
 
     def add_to_cart(self):
-        self.driver.find_element(*self.ADD_TO_CART).click()
+        (self.driver.find_element(*self.ADD_TO_CART).click()
+         @allure.step("Нажимаем кнопку добавления товара в корзину"))
+    def click_add_to_cart(self):
+        self.driver.find_element(*self.ADD_TO_CART_BTN).click()

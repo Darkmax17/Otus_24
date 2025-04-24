@@ -1,3 +1,4 @@
+import allure
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -14,3 +15,6 @@ def currency_switch_main_page(browser):
 
     price_after = wait.until(EC.visibility_of_element_located((By.CSS_SELECTOR, ".price"))).text
     assert price_before != price_after, "Цена не изменилась при смене валюты"
+   @allure.step("Получаем список цен на странице")
+    def get_all_prices(self):
+        return self.driver.find_elements(*self.PRICES)
