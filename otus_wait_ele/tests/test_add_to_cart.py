@@ -6,7 +6,6 @@ from selenium.webdriver.support import expected_conditions as EC
 
 def test_add_random_product_to_cart(browser):
     # 1. Явно задаём base_url (не через getattr!)
-    base_url = "http://localhost"
     browser.get(base_url)
     wait = WebDriverWait(browser, 30)
 
