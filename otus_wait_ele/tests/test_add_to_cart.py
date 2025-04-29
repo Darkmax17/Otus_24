@@ -53,3 +53,4 @@ def test_add_random_product_to_cart(browser):
         with open("debug_alert.html", "w", encoding="utf-8") as f:
             f.write(browser.page_source)
         raise AssertionError("Не удалось найти или кликнуть ссылку 'shopping cart'") from e
+
