@@ -11,3 +11,4 @@ def test_product_page_elements(browser):
     wait.until(EC.visibility_of_element_located((By.ID, "button-cart")))
     wait.until(EC.visibility_of_element_located((By.CLASS_NAME, "price")))
     wait.until(EC.visibility_of_element_located((By.CLASS_NAME, "image")))
+

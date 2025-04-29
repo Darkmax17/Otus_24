@@ -37,3 +37,4 @@ def test_main_page_elements(browser):
         except TimeoutException:
             print("❌ Cart button not found")
             raise AssertionError("❌ Cart button not found")
+
